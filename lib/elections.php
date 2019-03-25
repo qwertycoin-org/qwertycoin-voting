@@ -30,7 +30,7 @@ class election {
     public $active;
     public $paymentID;
 
-	public function __construct(int $electionID, int $category, bool $realtimeGoal, string $question, string $description, float $minimumvotes, float $qwcpervote, string $neededBTC, string $deadline, $answers, bool $active = true, string $paymentID) {
+    public function __construct(int $electionID, int $category, bool $realtimeGoal, string $question, string $description, float $minimumvotes, float $qwcpervote, string $neededBTC, string $deadline, $answers, bool $active = true, string $paymentID) {
         $this->electionID = $electionID;
         $this->category = $category;
         $this->realtimeGoal = $realtimeGoal;

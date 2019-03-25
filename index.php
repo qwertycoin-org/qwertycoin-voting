@@ -47,8 +47,8 @@ $question1 = new election(
 );
 
 $question2 = new election(2,2,false,"Another Test election 2???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),false,"");
-$question3 = new election(2,3,false,"Another freaking election #3???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
-$question4 = new election(2,2,true,"Test election the 4th???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
+$question3 = new election(3,3,false,"Another freaking election #3???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
+$question4 = new election(4,2,true,"Test election the 4th???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
 
 // Add above Questions to the voting page
 $questions = array($question1,$question2,$question3,$question4);

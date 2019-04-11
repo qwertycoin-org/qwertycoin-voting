@@ -17,7 +17,7 @@
 // along with Qwertycoin.  If not, see <http://www.gnu.org/licenses/>.
 
 header("Content-type: application/json; charset=utf-8");
-print_r('{
+$var0 = print_r('{
 	"software":"Qwertycoin Voting System",
 	"version":"1.16",
 	"contact":"exchange@qwertycoin.org",
@@ -33,9 +33,9 @@ print_r('{
 	$arrAddress[] = [];
     $i=0;
     $j=0;
-print_r('"elections":[');
+$var1 = print_r('"elections":[');
 while($i < count($questions)) {
-print_r('{
+$var2 = print_r('{
 	"questionID":"'.$questions[$i]->getElectionID().'",
 	"category":"'.$questions[$i]->getCategory().'",
 	"question":"'.$questions[$i]->getQuestion().'",
@@ -55,7 +55,7 @@ foreach($questions[$i]->getAnswers() as $answers) {
 		$tesb = $qwclib->getBalanceFromAddressToCoins($answers->qwcaddress);
 	}
 
-	print_r('{
+	$var3 = print_r('{
 		"answer":"'.$arrAnswers[$j] = $answers->answer.'",
 		"address":"'.$arrAddress[$j] = $answers->qwcaddress.'",
 		"balance":"'.floor($tesb).'",
@@ -63,15 +63,19 @@ foreach($questions[$i]->getAnswers() as $answers) {
 	}');
 	$j++;
 	$k++;
-	if($k != count($questions[$i]->getAnswers())) print_r(',');
+	if($k != count($questions[$i]->getAnswers())) $var4 = print_r(',');
 }
 $k=0;
 
-print_r('],
+$var5 = print_r('],
 	"active": '.$questions[$i]->getStatus().'
 }');
-	if($i != count($questions)-1) print_r(',');
+	if($i != count($questions)-1) $var6 = print_r(',');
 	$i++;
 }
-print_r('],"devdonations":[{"symbol":"BTC","name":"Bitcoin","address":"1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw"},{"symbol":"QWC","name":"Qwertycoin","address":"QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y"},{"symbol":"ETH","name":"Ethereum","address":"0xA660Fb28C06542258bd740973c17F2632dff2517"},{"symbol":"ERC20","name":"ERC20 Tokens","address":"0x0703DB2425157F5ab3AD552CB703B6bFf72be834"},{"symbol":"BCH","name":"Bitcoin Cash","address":"qz975ndvcechzywtz59xpkt2hhdzkzt3vvt8762yk9"},{"symbol":"XMR","name":"Monero Cash","address":"47gmN4GMQ17Veur5YEpru7eCQc5A65DaWUThZa9z9bP6jNMYXPKAyjDcAW4RzNYbRChEwnKu1H3qt9FPW9CnpwZgNscKawX"},{"symbol":"ETN","name":"Electroneum","address":"etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQp31GbG3M2DiVM3qRDSQ5Vwq"}]}');
+$var7 = print_r('],"devdonations":[{"symbol":"BTC","name":"Bitcoin","address":"1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw"},{"symbol":"QWC","name":"Qwertycoin","address":"QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y"},{"symbol":"ETH","name":"Ethereum","address":"0xA660Fb28C06542258bd740973c17F2632dff2517"},{"symbol":"ERC20","name":"ERC20 Tokens","address":"0x0703DB2425157F5ab3AD552CB703B6bFf72be834"},{"symbol":"BCH","name":"Bitcoin Cash","address":"qz975ndvcechzywtz59xpkt2hhdzkzt3vvt8762yk9"},{"symbol":"XMR","name":"Monero Cash","address":"47gmN4GMQ17Veur5YEpru7eCQc5A65DaWUThZa9z9bP6jNMYXPKAyjDcAW4RzNYbRChEwnKu1H3qt9FPW9CnpwZgNscKawX"},{"symbol":"ETN","name":"Electroneum","address":"etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQp31GbG3M2DiVM3qRDSQ5Vwq"}]}');
+$temp = $var0 + $var1 + $var2 + $var3 + $var4 + $var5 + $var6 + $var7;
+
+echo json_encode($temp);
+
 exit;

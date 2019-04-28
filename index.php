@@ -23,35 +23,7 @@ require_once('lib/elections.php');
 // RPC -> Qwertycoin walletd
 $qwclib = new Qwertycoin_Library("127.0.0.1","8070","your_password");
 
-// Elections
-$question1 = new election(
-	1,	// Election ID (Consecutive number)
-	1,	// Category ID
-	false,	// RealTime Calculation by price (true|false)
-	"Test Election 1",
-	"A great description goes here.....",
-	10000,	// Minimum Votes for win
-	100000,	// How many QWC equals one Vote
-	1,		// Estimated BTC Amounts (only if RTC is true)
-	"2020-10-31",	// Time limitation
-	array(	// Array of Voting Options
-	new answer(
-		"Yes",
-		"QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),
-	new answer(
-		"No",
-		"QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")
-	),
-	true,	// Is this Question active? (true|false)
-	""		// Payment ID (Used for further Usecases)
-);
-
-$question2 = new election(2,2,false,"Another Test election 2???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),false,"");
-$question3 = new election(3,3,false,"Another freaking election #3???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
-$question4 = new election(4,2,true,"Test election the 4th???","",12000,110,0,"2018-10-31",array(new answer("Yes","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF"),new answer("No","QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF")),true,"");
-
-// Add above Questions to the voting page
-$questions = array($question1,$question2,$question3,$question4);
+require_once('lib/electionsList.php');
 
 if($electionID >= count($questions)) {	$electionID = 0; }
 
@@ -100,8 +72,6 @@ if($totalBalances <= 1024) {
 	$totalBanc = "Total voted: ".number_format($totalBalances)."  QWC";
 }
 
-// Print the JSON API
-if($api) { require_once('lib/api.php'); } 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -268,7 +238,7 @@ Welcome to Official Qwertycoin Voting Platform.<br/>This platform allows members
 			<div class="one-half column miners">
 			<h2 class="miningPortDesc">How to participate</h2>
 			<ol>
-			<li>Choose a topic from the list under Election or <a href="?">start a topic</a>.</li>
+			<li>Choose a topic from the list under Election or <a href="https://t.me/qwertycoin" target="_blank">start a topic</a>.</li>
 			<li>Send QWC to the address of supporting actions.</li>
 			<li>That’s it. Simple.</li>
 			</ol>
@@ -448,11 +418,11 @@ Welcome to Official Qwertycoin Voting Platform.<br/>This platform allows members
 			<div class="footer">
 				<div class="one-half column">
 				<!-- This copyright should be left intact -->
-				Powered by <a target="_blank" href="https://github.com/qwertycoin-org/qwertycoin-voting"><i class="fa fa-github"></i> Qwertycoin Voting System</a> v. 1.16<br />
+				Powered by <a target="_blank" href="https://github.com/qwertycoin-org/qwertycoin-voting"><i class="fa fa-github"></i> Qwertycoin Voting System</a> v. 1.19<br />
 				Copyright &copy; 2018 &mdash; 2019 <a href="https://qwertycoin.org/">The Qwertycoin Group</a>.<br />
 				</div>
 				<div class="one-half column">
-					<a href="https://voting.qwertycoin.org?api"><strong>API</strong></a>
+					<a href="https://voting.qwertycoin.org/api/"><strong>API</strong></a>
 				</div>
 				<br class="clear" />
 			</div>

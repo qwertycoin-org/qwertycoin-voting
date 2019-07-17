@@ -29,9 +29,13 @@ $question01 = new election(
 	"1540944000",
 	array(
 	new answer("Yes",
-		"QWC1bAvVctK2eFZVmgTJJAStxQP7nTStGDTusYfWRMbbTMjkwA8qUvHbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXc4iQDm","1002817779"),
+		"QWC1bAvVctK2eFZVmgTJJAStxQP7nTStGDTusYfWRMbbTMjkwA8qUvHbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXc4iQDm",
+		"1002817779"
+	),
 	new answer("No",
-		"QWC1fv9UmA52GW4jn265e1LAvqksPcqKcjLLXFh5o4jSRoz4HcFhHWVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfWAuEs","18140814")
+		"QWC1fv9UmA52GW4jn265e1LAvqksPcqKcjLLXFh5o4jSRoz4HcFhHWVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfWAuEs",
+		"18140814"
+	)
 	),
 	false,
 	"26f02bb0fd8ddad2b83e2c60eefcb5a6d3e5de5190bbae99cbff52e12e91ee93"
@@ -51,10 +55,12 @@ $question02 = new election(
 	new answer(
 		"Yes",
 		"QWC1JJHyn2FhuUZYV1JFCiLjaNzFhiqwkSCnXdw16PNj6Adn9QjiES9bs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbBuJNi",
-		"2105253"),
+		"2105253"
+	),
 	new answer(
 		"No",
-		"QWC1ZPxqvDjXQzJfCREhzq9rRL6mMxWGeYeF4dV7hGNBNSj7uPF1tWHbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbaczx7")
+		"QWC1ZPxqvDjXQzJfCREhzq9rRL6mMxWGeYeF4dV7hGNBNSj7uPF1tWHbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbaczx7"
+	)
 	),
 	false,
 	"2f1cb357336a7fa217e45777c82bec67dba8bb973cb1e53b622b35b17859aa7a"
@@ -73,10 +79,12 @@ $question03 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1Fn8BNzRgiHrWxPteECSMiKDCgwDAiNS4mtd4CvqYFq9xTVvFqfKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXctgtnC"),
+		"QWC1Fn8BNzRgiHrWxPteECSMiKDCgwDAiNS4mtd4CvqYFq9xTVvFqfKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXctgtnC"
+	),
 	new answer(
 		"No",
-		"QWC1GRqjHE6gbefQoMrmdeQiqEEay5Pg28ru5C1rDwJ8TCs8ZjcjL29bs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXcwMx8y")
+		"QWC1GRqjHE6gbefQoMrmdeQiqEEay5Pg28ru5C1rDwJ8TCs8ZjcjL29bs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXcwMx8y"
+	)
 	),
 	true,
 	"9957841b49c023ac75660bbd4225f04c84b3356a642c9e83dc563f803cffb683"
@@ -96,11 +104,13 @@ $question04 = new election(
 	new answer(
 		"Yes",
 		"QWC1aYvqphF24StMwmCEvLHeGGdSjYNmvhv3XnXp4zfg3iwF5D3oazHbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgtXb81",
-		"50001668"),
+		"50001668"
+	),
 	new answer(
 		"No",
 		"QWC1Y3yDxJ17czP1h5TEnv2e8DUW4B3ETgLs5f1vp1UMczFqghtA9JVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXdJPpfK",
-		"46")
+		"46"
+	)
 	),
 	false,
 	"a8e283e0cf790d4472a78903580168c7b22373e83c239fab91d719fa647083c2"
@@ -120,15 +130,18 @@ $question05 = new election(
 	new answer(
 		"Yes",
 		"QWC1WEquw7cAQD1fTYmhSKG6uPXJyntH9jSdS1kq4Dami93xGAmWNBFbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXcRWzkR",
-		"0"),
+		"0"
+	),
 	new answer(
 		"No",
 		"QWC1euDAjic618ZhJLdKqBBi8nL8ZkrkDHMZ6duQcZS3Vgaox7wJvihbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXeJFGUh",
-		"1100000"),
+		"1100000"
+	),
 	new answer(
 		"Create lightwallet!",
 		"QWC1T7fbpHCAqk7ZUpJVx7MUtZXw3E1MMVz24N7a4vBEdTDPeLVuTWubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXeqj1Y9",
-		"9985")
+		"9985"
+	)
 	),
 	false
 	,"93253e642a16788e539777de4bec7bae7c146cfe2b2b903c465b36aa8694f358"
@@ -147,10 +160,12 @@ $question06 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1QK6ZAsRULDYT4ZmSEB6TwkExcxm8sTjyCE9n2Y7W6ZoLbiP4bAdbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfpvLNa"),
+		"QWC1QK6ZAsRULDYT4ZmSEB6TwkExcxm8sTjyCE9n2Y7W6ZoLbiP4bAdbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfpvLNa"
+	),
 	new answer(
 		"No",
-		"QWC1Eeo5mywDTyoMqgiqpiEc5yKduf784QGTDJV45q2vBiQDLEq2xxubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXd3MBAp")
+		"QWC1Eeo5mywDTyoMqgiqpiEc5yKduf784QGTDJV45q2vBiQDLEq2xxubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXd3MBAp"
+	)
 	),
 	false,
 	"c57c4ff3d2fe649bcd9fcb017c3b524aede8ae6b89a6c3acd12db7000000c299"
@@ -169,10 +184,12 @@ $question07 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1Lrvysrq1Yrfcy3xPKCRENJ9HDfUFZ9biyGkEDE3DUbWRbm7TwBbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXexn2cG"),
+		"QWC1Lrvysrq1Yrfcy3xPKCRENJ9HDfUFZ9biyGkEDE3DUbWRbm7TwBbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXexn2cG"
+	),
 	new answer(
 		"No",
-		"QWC1SFdVsV6hpiEYmiqf6Lc5gTWWbLbbmRdYTAKWFiHFLUTTqCDN9iVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgTBXt1")
+		"QWC1SFdVsV6hpiEYmiqf6Lc5gTWWbLbbmRdYTAKWFiHFLUTTqCDN9iVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgTBXt1"
+	)
 	),
 	true,
 	"1e8911e4d3c953fc60b683e7b1559b9ab938d8586eeb5fbf2c4d9e8fc6d82e25"
@@ -211,10 +228,12 @@ $question09 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1P6GyM58QsPdjbcW3ZMAiwvhJaDJtedFT5jZEM9FZBBKfMrZRiQMbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbrz4Ao"),
+		"QWC1P6GyM58QsPdjbcW3ZMAiwvhJaDJtedFT5jZEM9FZBBKfMrZRiQMbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbrz4Ao"
+	),
 	new answer(
 		"No",
-		"QWC1HgmKRQwNMZ198EeWNeLDiKHfUc9UeM2L96XZ6aFwirhZLjR4TyXbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfaQ7fc")
+		"QWC1HgmKRQwNMZ198EeWNeLDiKHfUc9UeM2L96XZ6aFwirhZLjR4TyXbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfaQ7fc"
+	)
 	),
 	true,
 	"633cc096745a0250f279092b48946c460c66e98e0320300da59a814d75a426ea"
@@ -233,10 +252,12 @@ $question10 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1dboD83uXF25GMHtNVjFnsNub6HmeQQqe8E7nMdyTCgCitj9RNyBbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXh7xCQ2"),
+		"QWC1dboD83uXF25GMHtNVjFnsNub6HmeQQqe8E7nMdyTCgCitj9RNyBbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXh7xCQ2"
+	),
 	new answer(
 		"No",
-		"QWC1YMKK4rP26pVsXw4qzd5akFjnHQqjRZuinGtrwH9KK8qCRrmSdCRbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXegiAfN")
+		"QWC1YMKK4rP26pVsXw4qzd5akFjnHQqjRZuinGtrwH9KK8qCRrmSdCRbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXegiAfN"
+	)
 	),
 	false,
 	"69d50a83a05b6e23e2488d6c514b14ba228fd8db2ac584637f391f1803aef628"
@@ -255,10 +276,12 @@ $question11 = new election(
 	array(
 	new answer(
 		"Yes",
-		"QWC1SmHGe2E1eq7L8V2Xi3WX6oVV4Gw6DcgY2JZbk3x4KymzVHWJZJVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXdzJaND"),
+		"QWC1SmHGe2E1eq7L8V2Xi3WX6oVV4Gw6DcgY2JZbk3x4KymzVHWJZJVbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXdzJaND"
+	),
 	new answer(
 		"Yes",
-		"QWC1hfWMZ9YfjVTSpbsPS4E3qtvppb3ZnXpk43TReRFhj5SQiTZk4dbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgrFdCL")
+		"QWC1hfWMZ9YfjVTSpbsPS4E3qtvppb3ZnXpk43TReRFhj5SQiTZk4dbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgrFdCL"
+	)
 	),
 	true,//ac()
 	""//paymentID
@@ -277,7 +300,8 @@ $question12 = new election(
 	array(
 	new answer(
 		"OK",
-		"QWC1er9YDTPS2yq8jykUUqZqx1k9PQdmfYkPuBRxeccXJp7pxG73WmKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfFGUHY"),
+		"QWC1er9YDTPS2yq8jykUUqZqx1k9PQdmfYkPuBRxeccXJp7pxG73WmKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfFGUHY"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -296,7 +320,8 @@ $question13 = new election(
 	array(
 	new answer(
 		"OK",
-		"QWC1ct8kV4KfLffDu1AXwNaPojEuXiRVHNmaRLVNN5dk2UMPZT9Xs9fbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgkMqaU"),
+		"QWC1ct8kV4KfLffDu1AXwNaPojEuXiRVHNmaRLVNN5dk2UMPZT9Xs9fbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXgkMqaU"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -315,7 +340,8 @@ $question14 = new election(
 	array(
 	new answer(
 		"DON",
-		"QWC1JtqqVcvKts1j4BEVfW4VWaLGemxXkWB6L4uoTENuCjc9EULDEVKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfAFMN2")
+		"QWC1JtqqVcvKts1j4BEVfW4VWaLGemxXkWB6L4uoTENuCjc9EULDEVKbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXfAFMN2"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -334,7 +360,8 @@ $question15 = new election(
 	array(
 	new answer(
 		"DON",
-		"QWC1DgpzfWZhFbaGHCT2JCSHu81V19eTXbCQaHG5f4Tc1sJZWjkkQdbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXg7aU6J")
+		"QWC1DgpzfWZhFbaGHCT2JCSHu81V19eTXbCQaHG5f4Tc1sJZWjkkQdbbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXg7aU6J"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -353,7 +380,8 @@ $question16 = new election(
 	array(
 	new answer(
 		"DON",
-		"QWC1bcGt5hiFMX1nmQBFUfMPTQm1TzbSEidVXc2fH6RfcJ6CHnozZGZbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXe2yVF9")
+		"QWC1bcGt5hiFMX1nmQBFUfMPTQm1TzbSEidVXc2fH6RfcJ6CHnozZGZbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXe2yVF9"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -372,7 +400,8 @@ $question17 = new election(
 	array(
 	new answer(
 		"DON",
-		"QWC1bSVF5AoHwsAeMUyneR6Lwp1YgkG4mMGrYTG3vrv6eQdovem2K89bs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbVAqj6")
+		"QWC1bSVF5AoHwsAeMUyneR6Lwp1YgkG4mMGrYTG3vrv6eQdovem2K89bs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbVAqj6"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -391,7 +420,8 @@ $question18 = new election(
 	array(
 	new answer(
 		"DON",
-		"QWC1G8mbU6oVNUP4gjxbm5hRQDfCxuVXLgkHpDh8amaC7QWaMymdsedbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXcjwmxi")
+		"QWC1G8mbU6oVNUP4gjxbm5hRQDfCxuVXLgkHpDh8amaC7QWaMymdsedbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXcjwmxi"
+	)
 	),
 	true,//active?
 	""//paymentID
@@ -410,10 +440,12 @@ $question19 = new election(
 	array(
 	new answer(
 		"YES",
-		"QWC1PmpV66vMq4aDmSteiYMYfd4bepYc9U1g5vxsHvDQgahVq3Ys7eubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXffbVD7"),
+		"QWC1PmpV66vMq4aDmSteiYMYfd4bepYc9U1g5vxsHvDQgahVq3Ys7eubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXffbVD7"
+	),
 	new answer(
 		"NOPE",
-		"QWC1PmpV66vMq4aDmSteiYMYfd4bepYc9U1g5vxsHvDQgahVq3Ys7eubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXffbVD7")
+		"QWC1PmpV66vMq4aDmSteiYMYfd4bepYc9U1g5vxsHvDQgahVq3Ys7eubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXffbVD7"
+	)
 	),
 	false,//active?
 	""//paymentID
@@ -432,10 +464,12 @@ $question20 = new election(
 	array(
 	new answer(
 		"YES",
-		"QWC1bAxvzowCSoDh8LZwKmaZEaUBtkb5vUsovDbChK4ZBFn1JSfmpCubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXdaBtqd"),
+		"QWC1bAxvzowCSoDh8LZwKmaZEaUBtkb5vUsovDbChK4ZBFn1JSfmpCubs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXdaBtqd"
+	),
 	new answer(
 		"NO",
-		"QWC1G1Y2iyE8cYnaRuwUGGKpwVWWFYH2J8LmJvV74JUQdZg3bXPQoMwbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbW66Xe")
+		"QWC1G1Y2iyE8cYnaRuwUGGKpwVWWFYH2J8LmJvV74JUQdZg3bXPQoMwbs2gGrTbtPcFgrp3Yf7K5kGEp1vyvZq8b9JFXbW66Xe"
+	)
 	),
 	true,//active?
 	""//paymentID

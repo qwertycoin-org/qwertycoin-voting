@@ -21,7 +21,7 @@ require_once('lib/library.php');
 require_once('lib/elections.php');
 
 // RPC -> Qwertycoin walletd
-$qwclib = new Qwertycoin_Library("127.0.0.1","8070","your_password");
+$qwclib = new Qwertycoin_Library("127.0.0.1","18072","");
 
 require_once('lib/electionsList.php');
 
@@ -210,6 +210,7 @@ if($totalBalances <= 1024) {
 			if($election) {
 				$qtitle = $questions[$electionID]->getQuestion();
 				$qdescr = $questions[$electionID]->getDescription();
+				$qdeadline = $questions[$electionID]->getDeadline();
 				$qanswers = count($questions[$electionID]->getAnswers());
 				$qarrAnswers[] = []; $qarrAddress[] = []; $qarrVotes[] = []; $k=0;
 				foreach($questions[$electionID]->getAnswers() as $answers) {
@@ -238,7 +239,7 @@ Welcome to Official Qwertycoin Voting Platform.<br/>This platform allows members
 			<div class="one-half column miners">
 			<h2 class="miningPortDesc">How to participate</h2>
 			<ol>
-			<li>Choose a topic from the list under Election or <a href="https://t.me/qwertycoin" target="_blank">start a topic</a>.</li>
+			<li>Choose a topic from the list under Election or <a href="https://t.me/qwertycoin" target="_blank">start a topic</a> in Telegram.</li>
 			<li>Send QWC to the address of supporting actions.</li>
 			<li>That’s it. Simple.</li>
 			</ol>
@@ -326,9 +327,12 @@ Welcome to Official Qwertycoin Voting Platform.<br/>This platform allows members
 ?>
 		<strong>New required real time: <span class="income"><?php echo number_format($qminimumVotes); ?></span> Votes</strong><br/>
 		<?php/* end realtime calculation */} else {?>
-			<strong class="miningPortDesc">Note: real time target is</strong> disabled<strong class="miningPortDesc"> <?php echo number_format($realtimeAmount) ?> Votes, based on the current BTC : QWC price in real time by <a href="https://www.coingecko.com/de/kurs_chart/qwertycoin/btc" target="_blank" title="Stats by CoinGecko">CoinGecko</a>.</strong><br/>
+			<!--
+			<strong class="miningPortDesc">Note: real time target is</strong> disabled<strong class="miningPortDesc"> <?php echo number_format($realtimeAmount) ?> Votes, based on the current BTC : QWC price in real time by <a href="https://www.coingecko.com/de/kurs_chart/qwertycoin/btc" target="_blank" title="Stats by CoinGecko">CoinGecko</a>.</strong><br/>-->
 		<?php } ?>
-      <?php } ?>
+	<?php } ?>
+	<?php if($qdeadline) { ?><strong>This vote is active until at least: <span class="income"><?php echo date('d. M Y', $qdeadline); ?></span></strong><br/><?php } ?>
+
       <hr/>
       <?php if($questions[$electionID]->getStatus() != "true") { ?>
       	<span class="income">Election is finished.</span><br/>You can (re)check with this PaymentID: <a target="_blank" href="https://explorer.qwertycoin.org/?hash=<?php echo strtoupper($questions[$electionID]->getPaymentID()); ?>#blockchain_payment_id"><?php echo strtoupper($questions[$electionID]->getPaymentID()); ?></a> when payments were made.
@@ -418,7 +422,7 @@ Welcome to Official Qwertycoin Voting Platform.<br/>This platform allows members
 			<div class="footer">
 				<div class="one-half column">
 				<!-- This copyright should be left intact -->
-				Powered by <a target="_blank" href="https://github.com/qwertycoin-org/qwertycoin-voting"><i class="fa fa-github"></i> Qwertycoin Voting System</a> v. 1.19<br />
+				Powered by <a target="_blank" href="https://github.com/qwertycoin-org/qwertycoin-voting"><i class="fa fa-github"></i> Qwertycoin Voting System</a> v. 1.21<br />
 				Copyright &copy; 2018 &mdash; 2019 <a href="https://qwertycoin.org/">The Qwertycoin Group</a>.<br />
 				</div>
 				<div class="one-half column">

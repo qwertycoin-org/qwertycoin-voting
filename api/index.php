@@ -76,6 +76,7 @@ foreach($questions[$i]->getAnswers() as $answers) {
 $k=0;
 
 print_r('],
+	"deadline":"'.$questions[$i]->getDeadline().'",
 	"active": '.$questions[$i]->getStatus().'
 }');
 	if($i != count($questions)-1) print_r(',');
